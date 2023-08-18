@@ -1,0 +1,158 @@
+.header{
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section{
+    
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+
+}
+.right-section{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+
+}
+.icon-menu{
+    height: 20px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+.icon-main{
+    height: 50px;
+}
+.search-bar{
+    flex: 1;
+    height: 34px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-size: 14pt;
+}
+.button-search{
+    height: 38px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 8px;
+
+}
+.button-search,
+.button-mic,
+.upload-icon-container,
+.notification-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-search .tooltip,
+.button-mic .tooltip,
+.upload-icon-container .tooltip,
+.notification-icon-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top:4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+
+}
+.button-search:hover .tooltip,
+.button-mic:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip{
+    opacity: 1;
+}
+
+.icon-search{
+    height: 29px;
+    width: 29px;
+    margin-top: 2px;
+}
+.icon-mic{
+    height: 20px;
+}
+.button-mic{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+
+}
+.icon-create{
+    height: 24px;
+}
+.icon-notification{
+    height: 24px;
+
+}
+.icon-notification-container{
+    position: relative;
+}
+.notifications{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+
+
+}
+
+.icon-profile{
+    height: 32px;
+    border-radius: 16px;
+}
